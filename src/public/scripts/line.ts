@@ -11,12 +11,10 @@ export class Phrase {
 }
 
 export class Line {
-	command: boolean;
 	content: Phrase[];
 	timestamp: number;
 
-	constructor(command: boolean, content: Phrase[]) {
-		this.command = command;
+	constructor(content: Phrase[]) {
 		this.content = content;
 		this.timestamp = Date.now();
 	}
