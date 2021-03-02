@@ -20,6 +20,12 @@
 
 #terminal-container {
 	padding: 1em;
+	scrollbar-color: var(--cyan) var(--grey);
+	scrollbar-width: thin;
+}
+
+#terminal::-webkit-scrollbar-track {
+	display: none;
 }
 
 .rounded-sm {
@@ -27,7 +33,8 @@
 }
 
 #terminal {
-	height: 60vh;
+	height: 65vh;
+	overflow-y: auto;
 }
 
 /* colours */
@@ -38,7 +45,8 @@
 	--yellow: #ebcb8b;
 	--green: #a3be8c;
 	--purple: #b48ead;
-	--cyan: #88c0d0; 
+	--cyan: #88c0d0;
+	--grey: #4c566a;
 }
 
 .red {
@@ -64,3 +72,16 @@
 .cyan {
 	color: var(--cyan);
 }
+
+.grey {
+	color: var(--grey);
+}
+
+a {
+	color: var(--purple);
+	text-decoration: underline;
+}
+
+li {
+	list-style-type: none;
+ }
