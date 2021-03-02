@@ -19,5 +19,48 @@
 }
 
 #terminal-container {
-	padding: 2em;
+	padding: 1em;
+}
+
+.rounded-sm {
+	border-radius: 5px;
+}
+
+#terminal {
+	height: 60vh;
+}
+
+/* colours */
+
+:root {
+	--red: #bf616a;
+	--orange: #d08770;
+	--yellow: #ebcb8b;
+	--green: #a3be8c;
+	--purple: #b48ead;
+	--cyan: #88c0d0; 
+}
+
+.red {
+	color: var(--red);
+}
+
+.orange {
+	color: var(--orange);
+}
+
+.yellow {
+	color: var(--yellow);
+}
+
+.green {
+	color: var(--green);
+}
+
+.purple {
+	color: var(--purple);
+}
+
+.cyan {
+	color: var(--cyan);
 }

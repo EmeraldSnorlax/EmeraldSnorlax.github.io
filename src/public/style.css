@@ -1,7 +1,7 @@
 @import url('https://rsms.me/inter/inter.css');
 
 :root {
-	--dark: #212121;
+	--dark: #2e3440;
 	--white: #f4f4f4;
 }
 
@@ -15,8 +15,7 @@ html {
 }
 
 body {
-	opacity: 0;
-	transition: opacity 5s;
+	opacity: 1;
 	max-width: 100%;
 	overflow-x: hidden;
 }
@@ -33,7 +32,7 @@ body {
 }
 
 @keyframes flyInFromRight {
-	0% { transform: translateX(200%); }
+	0% { transform: translateX(1000%); }
 	100% { transform: translateX(0%); }
 }
 
