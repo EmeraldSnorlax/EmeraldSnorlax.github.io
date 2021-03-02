@@ -1,3 +1,5 @@
+@import url('https://rsms.me/inter/inter.css');
+
 :root {
 	--dark: #212121;
 	--white: #f4f4f4;
@@ -14,4 +16,31 @@ html {
 	0%{background-position: 100% 0%}
 	50%{background-position: 0% 100%}
 	100%{background-position: 100% 0%}
+}
+
+#header > * > h1 {
+	padding: 0.3em;
+}
+
+
+/* utils */
+
+.sans-serif {
+	font-family: 'Inter', sans-serif;
+}
+
+.white {
+	color: var(--white);
+}
+
+.center {
+	text-align: center;
+}
+
+.dark-bg {
+	background-color: var(--dark);
+}
+
+.rounded {
+	border-radius: 200px;
 }
