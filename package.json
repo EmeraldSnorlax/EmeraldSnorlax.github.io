@@ -6,9 +6,14 @@
   "author": "EmeraldSnorlax <emeraldsnorlax@disroot.org>",
   "license": "AGPL-3.0-or-later",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "browserify": "^17.0.0",
+    "eslint": "^7.21.0",
+    "tsify": "^5.0.2",
     "typescript": "^4.2.2"
   },
   "scripts": {
-	  "build": "tsc --project ."
+    "build": "npx browserify ./src/public/scripts/main.ts -p [ tsify ] > ./src/dist/bundle.js"
   }
 }
