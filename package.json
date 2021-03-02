@@ -14,6 +14,6 @@
     "typescript": "^4.2.2"
   },
   "scripts": {
-    "build": "npx browserify ./src/public/scripts/main.ts -p [ tsify ] > ./src/dist/bundle.js"
+    "build": "npx browserify ./src/public/scripts/main.ts -p [ tsify ] > ./src/public/dist/bundle.js"
   }
 }
