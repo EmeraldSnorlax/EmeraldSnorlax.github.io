@@ -1,0 +1,23 @@
+@font-face {
+	font-family: 'Roboto Mono', monospace;
+	src: url(./fonts/RobotoMono.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Roboto Mono', monospace;
+	src: url('./fonts/RobotoMono-Italic.ttf') format('truetype');
+	font-style: italic;
+}
+
+.monospace {
+	font-family: 'Roboto Mono', monospace;
+}
+
+.monospace-i {
+	font-family: 'Roboto Mono', monospace;
+	font-style: italic;
+}
+
+#terminal-container {
+	padding: 2em;
+}

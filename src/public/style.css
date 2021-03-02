@@ -10,11 +10,15 @@ html {
 	background-size: 600% 600%;
 	animation: gradientBackground 30s ease infinite;
 	height: 100vh;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 body {
 	opacity: 0;
 	transition: opacity 5s;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 @keyframes gradientBackground {
@@ -43,6 +47,11 @@ body {
 
 #header > * > h1 {
 	padding: 0.5em 1em;
+}
+
+#header {
+	padding-top: 3em;
+	padding-bottom: 3em;
 }
 
 
