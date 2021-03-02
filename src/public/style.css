@@ -8,18 +8,41 @@
 html {
 	background: linear-gradient(45deg, #feac5e, #c779d0, #4bc0c8);
 	background-size: 600% 600%;
-	animation: GradientBackground 30s ease infinite;
-	height: 100vh
+	animation: gradientBackground 30s ease infinite;
+	height: 100vh;
 }
 
-@keyframes GradientBackground {
-	0%{background-position: 100% 0%}
-	50%{background-position: 0% 100%}
-	100%{background-position: 100% 0%}
+body {
+	opacity: 0;
+	transition: opacity 5s;
+}
+
+@keyframes gradientBackground {
+	0% { background-position: 100% 0% }
+	50% { background-position: 0% 100% }
+	100% { background-position: 100% 0% }
+}
+
+@keyframes flyInFromLeft {
+	0% { transform: translateX(-200%); }
+	100% { transform: translateX(0%); }
+}
+
+@keyframes flyInFromRight {
+	0% { transform: translateX(200%); }
+	100% { transform: translateX(0%); }
+}
+
+.flyInFromLeft {
+	animation: flyInFromLeft 2s ease;
+}
+
+.flyInFromRight {
+	animation: flyInFromRight 2s ease;
 }
 
 #header > * > h1 {
-	padding: 0.3em;
+	padding: 0.5em 1em;
 }
 
 
@@ -42,5 +65,11 @@ html {
 }
 
 .rounded {
-	border-radius: 200px;
+	border-radius: 500px;
+}
+
+.flexbox {
+	display: flex;
+	justify-content: center;
+	width: 100%;
 }

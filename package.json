@@ -1,0 +1,14 @@
+{
+  "name": "EmeraldSnorlax.github.io",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/EmeraldSnorlax/EmeraldSnorlax.github.io",
+  "author": "EmeraldSnorlax <emeraldsnorlax@disroot.org>",
+  "license": "AGPL-3.0-or-later",
+  "devDependencies": {
+    "typescript": "^4.2.2"
+  },
+  "scripts": {
+	  "build": "tsc --project ."
+  }
+}
