@@ -85,3 +85,19 @@ a {
 li {
 	list-style-type: none;
  }
+
+ #prompt, #prompt:focus {
+	width: 97%;
+	border-style: none;
+	margin-left: 1em;
+	outline: none;
+ }
+
+#prompt:focus, #send:focus {
+	border-bottom-style: solid;
+	border-color: var(--cyan);
+}
+
+#send {		
+	border-style: none;
+}
