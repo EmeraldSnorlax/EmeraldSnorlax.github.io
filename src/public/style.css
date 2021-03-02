@@ -1,0 +1,17 @@
+:root {
+	--dark: #212121;
+	--white: #f4f4f4;
+}
+
+html {
+	background: linear-gradient(45deg, #feac5e, #c779d0, #4bc0c8);
+	background-size: 600% 600%;
+	animation: GradientBackground 30s ease infinite;
+	height: 100vh
+}
+
+@keyframes GradientBackground {
+	0%{background-position: 100% 0%}
+	50%{background-position: 0% 100%}
+	100%{background-position: 100% 0%}
+}
