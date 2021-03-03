@@ -23,6 +23,7 @@ export default function git(args: string[]): void {
 	} else {
 		// Check if the asked for field exists, and write it if it does
 		if (args[0] == 'config' && args[1] == '--get') {
+			new Line([new Phrase('white', '<br>')]).write(),
 			gitConfig.forEach((key: any, i: number) => {
 				if(key[args[2]]) {
 					new Line([new Phrase('white', `<br>
@@ -31,6 +32,7 @@ export default function git(args: string[]): void {
 				}
 			});
 		} else if (args[0] == 'config' && args[1] == '--list') {
+			new Line([new Phrase('white', '<br>')]).write(),
 			gitConfig.forEach((key: any, i: number) => {
 				new Line([new Phrase('white', `<br>
 					git: ${Object.keys(key)[0]}: ${gitConfig[i][Object.keys(key)[0]]}

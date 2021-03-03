@@ -33,7 +33,7 @@
 }
 
 #terminal {
-	height: 65vh;
+	height: 60vh;
 	overflow-y: auto;
 }
 
@@ -108,10 +108,14 @@ li {
 	border-radius: 5px;
 	background-color: var(--grey);
 	width: 100%;
-	margin: 0 1vw;
+	margin: 0.5em 1vw;
 }
 
 .suggestion:focus {
 	border-style: solid;
 	border-color: var(--green);
+}
+
+#prompt-container {
+	margin-top: 1em;
 }

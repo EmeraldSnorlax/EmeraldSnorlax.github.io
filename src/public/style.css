@@ -43,12 +43,13 @@ body {
 }
 
 #header > * > h1 {
-	padding: 0.5em 1em;
+	padding: 0.5em;
+	font-size: medium;
 }
 
 #header {
-	padding-top: 3em;
-	padding-bottom: 3em;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
 }
 
 
