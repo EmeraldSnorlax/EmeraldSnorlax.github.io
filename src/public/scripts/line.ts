@@ -27,6 +27,7 @@ export class Line {
 			(terminalElement as HTMLElement).innerHTML += `
 			<span class="${colour}">${text}</span>
 			`;
+			(terminalElement as HTMLElement).scrollTop = (terminalElement as HTMLElement).scrollHeight;
 		});
 	}
 }
