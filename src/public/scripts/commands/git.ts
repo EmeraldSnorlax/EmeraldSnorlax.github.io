@@ -6,7 +6,7 @@ const gitConfig: any = [
 	{ 'user.name': 'EmeraldSnorlax' },
 	{ 'user.github': '<a href="https://github.com/EmeraldSnorlax">https://github.com/EmeraldSnorlax</a>' },
 	{ 'user.gitlab': '<a href="https://gitlab.com/EmeraldSnorlax">https://gitlab.com/EmeraldSnorlax</a>' },
-	{ 'git.remote.url': '<a href="https://github.com/EmeraldSnorlax/EmeraldSnorlax.github.io">https://github.com/EmeraldSnorlax/EmeraldSnorlax.github.io</a>' }
+	{ 'git.remote.url': '<a href="https://github.com/EmeraldSnorlax/website">https://github.com/EmeraldSnorlax/website</a>' }
 ];
 
 
