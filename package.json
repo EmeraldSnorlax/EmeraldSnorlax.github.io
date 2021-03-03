@@ -10,11 +10,13 @@
     "@typescript-eslint/parser": "^4.16.1",
     "browserify": "^17.0.0",
     "eslint": "^7.21.0",
+    "grunt": "^1.3.0",
     "minify": "^7.0.1",
     "tsify": "^5.0.2",
     "typescript": "^4.2.2"
   },
   "scripts": {
-    "build": "mkdir -p ./src/public/dist && npx browserify ./src/public/scripts/main.ts -p [ tsify ] > ./src/public/dist/bundle.js && npx minify ./src/public/dist/bundle.js > ./src/public/dist/bundle.min.js && npx minify ./src/public/*.css > ./src/public/dist/min.css"
+    "purecss": "rm v2.0.1.zip && rm -rf pure-2.0.1 && wget https://github.com/pure-css/pure/archive/v2.0.1.zip && unzip v2.0.1.zip && cd pure-2.0.1 && yarn install && grunt && tail -n +7 ./build/grids-min.css > ./builds/grid-min.css",
+    "build": "mkdir -p ./src/public/dist && npx browserify ./src/public/scripts/main.ts -p [ tsify ] > ./src/public/dist/bundle.js && npx minify ./src/public/dist/bundle.js > ./src/public/dist/bundle.min.js && npx minify ./src/public/*.css ./pure-2.0.1/build/grids-min.css > ./src/public/dist/min.css"
   }
 }
