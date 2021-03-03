@@ -6,7 +6,8 @@ export default function help(): void {
 			Here is a list of all commands.<br>
 			* help: prints this menu and exits.<br>
 			* clear: clears the terminal<br>
-			* git: Run "git --help" for more details.
+			* git: Run "git --help" for more details.<br>
+			* gpg: Display OpenGPG key and fingerprint.<br>
 		`)]
 	).write();
 }
