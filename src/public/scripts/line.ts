@@ -1,6 +1,6 @@
 import { terminalElement } from './main';
 
-type Colour = 'red' | 'orange' | 'yellow' | 'green' | 'purple' | 'cyan' | 'grey';
+type Colour = 'white' | 'red' | 'orange' | 'yellow' | 'green' | 'purple' | 'cyan' | 'grey';
 
 export class Phrase {
 	colour: Colour;
