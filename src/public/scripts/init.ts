@@ -5,7 +5,8 @@ const commands = [
 	'help',
 	'git config --list',
 	'gpg',
-	'clear'
+	'clear',
+	'whoami'
 ];
 
 const promptButtons: HTMLElement = document.getElementById('prompt-buttons')!;
@@ -16,8 +17,12 @@ function setPrompt(command: string): void {
 
 export default function init(): void {
 	document.getElementById('noscript')?.remove();
-	const line = new Line([new Phrase('grey', '# Hello. Run "help" for more info.')]);
-	line.write();
+	new Line([new Phrase('grey', '# Hello. Run "help" for more info.<br>')]).write();
+	new Line([new Phrase('grey', '# Type a command or click a button.<br><br>')]).write();
+	new Line([new Phrase('grey', '# To send:<br>')]).write();
+	new Line([new Phrase('grey', '# press Enter with the prompt focused,<br>')]).write();
+	new Line([new Phrase('grey', '# or Ctrl + Enter with the prompt unfocused,<br>')]).write();
+	new Line([new Phrase('grey', '# or click the run button.<br>')]).write();
 
 	commands.forEach((command) => {
 		promptButtons.innerHTML += `
@@ -29,4 +34,5 @@ export default function init(): void {
 	document.getElementById('git config --list')?.addEventListener('click', () => { setPrompt('git config --list'); });
 	document.getElementById('gpg')?.addEventListener('click', () => { setPrompt('gpg'); });
 	document.getElementById('clear')?.addEventListener('click', () => { setPrompt('clear'); });
+	document.getElementById('whoami')?.addEventListener('click', () => { setPrompt('whoami'); });
 }

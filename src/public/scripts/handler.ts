@@ -4,8 +4,10 @@ import comments from './commands/comments';
 import git from './commands/git';
 import clear from './commands/clear';
 import gpg from './commands/gpg';
+import whoami from './commands/whoami';
 
 import { prompt } from './main';
+
 
 export default function handler(rawinput: string): void {
 	(prompt as HTMLInputElement).value = '';
@@ -31,6 +33,9 @@ export default function handler(rawinput: string): void {
 	case 'pgp':
 	case 'openpgp':
 		gpg();
+		break;
+	case 'whoami':
+		whoami();
 		break;
 	default:
 		cnf(command);

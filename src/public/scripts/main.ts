@@ -17,3 +17,9 @@ const send = document.getElementById('send');
 	handler((prompt as HTMLInputElement).value);
 });
 init();
+
+document.addEventListener('keyup', (e) => {
+	if (e.ctrlKey && e.key == 'Enter') {
+		handler((prompt as HTMLInputElement).value);
+	}
+})
