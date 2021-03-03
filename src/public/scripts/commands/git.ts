@@ -38,9 +38,9 @@ export default function git(args: string[]): void {
 			});
 		} else if(args[0] == 'help' || args[0] == '--help') {
 			new Line([new Phrase('cyan', `<br>
-				* git config --list`), new Phrase('white', ' lists all user info'),
+				* git config --list`), new Phrase('white', ': lists all user info'),
 			new Phrase('cyan', `<br>
-				* git config --get [field]`), new Phrase('white', ' gets user info from a specific field. <br>')
+				* git config --get [field]`), new Phrase('white', ': gets user info from a specific field. <br>')
 			]).write();
 		} else {
 			new Line([new Phrase('orange', `<br>
