@@ -6,6 +6,7 @@ export default function help(): void {
 			Here is a list of all commands.<br>
 			* help: prints this menu and exits.<br>
 			* clear: clears the terminal<br>
+			* git: Run "git --help" for more details.
 		`)]
 	).write();
 }

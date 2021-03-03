@@ -17,33 +17,34 @@ export default function git(args: string[]): void {
 	if(args.length == 0) {
 		new Line(
 			[new Phrase('orange', `<br>
-				git: specify arguments
+				git: Specify arguments. Run "git --help" for a list of commands. 
 			`)]
 		).write();
 	} else {
 		// Check if the asked for field exists, and write it if it does
-		let success = false;
 		if (args[0] == 'config' && args[1] == '--get') {
 			gitConfig.forEach((key: any, i: number) => {
 				if(key[args[2]]) {
-					success = true;
 					new Line([new Phrase('white', `<br>
 						git: ${args[2]}: ${gitConfig[i][args[2]]}
 					`)]).write();
 				}
 			});
 		} else if (args[0] == 'config' && args[1] == '--list') {
-			success = true;
 			gitConfig.forEach((key: any, i: number) => {
 				new Line([new Phrase('white', `<br>
 					git: ${Object.keys(key)[0]}: ${gitConfig[i][Object.keys(key)[0]]}
 				`)]).write();
 			});
-		}
-		
-		if (!success) {
+		} else if(args[0] == 'help' || args[0] == '--help') {
+			new Line([new Phrase('cyan', `<br>
+				* git config --list`), new Phrase('white', ' lists all user info'),
+			new Phrase('cyan', `<br>
+				* git config --get [field]`), new Phrase('white', ' gets user info from a specific field. <br>')
+			]).write();
+		} else {
 			new Line([new Phrase('orange', `<br>
-				git: "git ${args.join(' ')}" Missing or invalid arguments.
+				git: "git ${args.join(' ')}" Missing or invalid arguments. Run "git --help".
 			`)]).write();
 		}
 	}
