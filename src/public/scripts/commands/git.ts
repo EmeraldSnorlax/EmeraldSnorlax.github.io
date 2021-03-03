@@ -22,17 +22,29 @@ export default function git(args: string[]): void {
 		).write();
 	} else {
 		// Check if the asked for field exists, and write it if it does
-		let exists = false;
+		let success = false;
 		if (args[0] == 'config' && args[1] == '--get') {
 			gitConfig.forEach((key: any, i: number) => {
 				if(key[args[2]]) {
-					console.log(gitConfig[i][args[2]]);
-					exists = true;
+					success = true;
 					new Line([new Phrase('white', `<br>
 						git: ${args[2]}: ${gitConfig[i][args[2]]}
 					`)]).write();
 				}
 			});
+		} else if (args[0] == 'config' && args[1] == '--list') {
+			success = true;
+			gitConfig.forEach((key: any, i: number) => {
+				new Line([new Phrase('white', `<br>
+					git: ${Object.keys(key)[0]}: ${gitConfig[i][Object.keys(key)[0]]}
+				`)]).write();
+			});
+		}
+		
+		if (!success) {
+			new Line([new Phrase('orange', `<br>
+				git: "git ${args.join(' ')}" Missing or invalid arguments.
+			`)]).write();
 		}
 	}
 }
