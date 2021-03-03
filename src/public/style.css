@@ -10,12 +10,14 @@ html {
 	height: 100vh;
 	max-width: 100%;
 	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 body {
 	opacity: 1;
 	max-width: 100%;
 	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 @keyframes gradientBackground {
@@ -25,13 +27,15 @@ body {
 }
 
 @keyframes flyInFromLeft {
-	0% { transform: translateX(-200%); }
-	100% { transform: translateX(0%); }
+	0% { transform: translateX(-200%); opacity: 0; }
+	30% {opacity: 0; }
+	100% { transform: translateX(0%); opacity: 1;}
 }
 
 @keyframes flyInFromRight {
-	0% { transform: translateX(1000%); }
-	100% { transform: translateX(0%); }
+	0% { transform: translateX(1000%); opacity: 0;}
+	50% {opacity: 0; }
+	100% { transform: translateX(0%); opacity: 1}
 }
 
 .flyInFromLeft {

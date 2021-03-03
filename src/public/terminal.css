@@ -9,6 +9,25 @@
 	font-style: italic;
 }
 
+@keyframes flyInFromBottom {
+	0% { transform: translateY(600%); }
+	75% { transform: translateY(600%); opacity: 0; }
+	100% { transform: translateY(0%); opacity: 1; }
+}
+
+@keyframes flyInFromTop {
+	0% { transform: translateY(-600%); }
+	75% { transform: translateY(-600%); opacity: 0; }
+	100% { transform: translateY(0%); opacity: 1; }
+}
+
+@keyframes flyInFromLeftDelay {
+	0% { transform: translateX(-33%); }
+	75% { transform: translateX(-33%); opacity: 0; }
+	100% { transform: translateY(0%); opacity: 1; }
+}
+
+
 .monospace {
 	font-family: 'Roboto Mono', monospace;
 }
@@ -112,6 +131,7 @@ li {
 	background-color: var(--grey);
 	width: 100%;
 	margin: 0.5em 1vw;
+	animation: flyInFromLeftDelay 3.5s ease;
 }
 
 .suggestion:focus {
@@ -119,6 +139,9 @@ li {
 	border-color: var(--green);
 }
 
+
 #prompt-container {
 	margin-top: 1em;
+	animation: flyInFromBottom 2.5s ease;
+
 }
