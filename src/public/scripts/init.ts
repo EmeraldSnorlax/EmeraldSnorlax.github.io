@@ -1,5 +1,4 @@
 import { Line, Phrase } from './line';
-import handler from './handler';
 import { prompt } from './main';
 const commands = [
 	'help',

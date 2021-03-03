@@ -1,8 +1,7 @@
-import { Line, Phrase } from './line';
 export const terminalElement = document.getElementById('terminal');
 import init from './init';
 import handler from './handler';
-import clear from './commands/clear';
+
 
 
 export const prompt = document.getElementById('prompt');
@@ -22,4 +21,4 @@ document.addEventListener('keyup', (e) => {
 	if (e.ctrlKey && e.key == 'Enter') {
 		handler((prompt as HTMLInputElement).value);
 	}
-})
+});
