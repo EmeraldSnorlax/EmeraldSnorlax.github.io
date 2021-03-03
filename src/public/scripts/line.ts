@@ -1,10 +1,12 @@
 import { terminalElement } from './main';
 
+type Colour = 'red' | 'orange' | 'yellow' | 'green' | 'purple' | 'cyan' | 'grey';
+
 export class Phrase {
-	colour: string;
+	colour: Colour;
 	content: string;
 
-	constructor(colour: string, content: string) {
+	constructor(colour: Colour, content: string) {
 		this.colour = colour;
 		this.content = content;
 	}
