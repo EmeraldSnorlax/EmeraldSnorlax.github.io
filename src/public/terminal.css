@@ -101,3 +101,19 @@ li {
 #send {		
 	border-style: none;
 }
+
+.suggestion {
+	border-style: none;
+	padding: 0.3em;
+	border-radius: 5px;
+	background-color: var(--grey);
+	width: 100%;
+	margin: 0 1vw;
+	height: 2em;
+	
+}
+
+.suggestion:focus {
+	border-style: solid;
+	border-color: var(--green);
+}

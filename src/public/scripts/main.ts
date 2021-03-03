@@ -2,7 +2,8 @@ import { Line, Phrase } from './line';
 export const terminalElement = document.getElementById('terminal');
 import init from './init';
 import handler from './handler';
-init();
+import clear from './commands/clear';
+
 
 export const prompt = document.getElementById('prompt');
 (prompt as HTMLInputElement).addEventListener('keyup', (e) => {
@@ -15,3 +16,4 @@ const send = document.getElementById('send');
 (send as HTMLButtonElement).addEventListener('click', () => {
 	handler((prompt as HTMLInputElement).value);
 });
+init();
