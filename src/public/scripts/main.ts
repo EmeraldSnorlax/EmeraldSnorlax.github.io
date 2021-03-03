@@ -1,4 +1,4 @@
-import { Line, Phrase, write } from './line';
+import { Line, Phrase } from './line';
 export const terminalElement = document.getElementById('terminal');
 import init from './init';
 import handler from './handler';

@@ -1,5 +1,4 @@
 import help from './commands/help'; 
-import { write } from './line';
 import { prompt } from './main';
 export default function handler(rawinput: string): void {
 	(prompt as HTMLInputElement).value = '';

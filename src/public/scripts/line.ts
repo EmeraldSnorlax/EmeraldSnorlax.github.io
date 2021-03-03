@@ -18,14 +18,13 @@ export class Line {
 		this.content = content;
 		this.timestamp = Date.now();
 	}
-}
-
-export function write(line: Line): void {
-	line.content.forEach((phrase) => {
-		const colour = phrase.colour;
-		const text = phrase.content;
-		(terminalElement as HTMLElement).innerHTML += `
-				<span class="${colour}">${text}</span>
-		`;
-	});
+	write(): void {
+		this.content.forEach((phrase) => {
+			const colour = phrase.colour;
+			const text = phrase.content;
+			(terminalElement as HTMLElement).innerHTML += `
+			<span class="${colour}">${text}</span>
+			`;
+		});
+	}
 }
