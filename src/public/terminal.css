@@ -93,13 +93,16 @@ li {
 	outline: none;
  }
 
-#prompt:focus, #send:focus {
+#prompt:focus {
 	border-bottom-style: solid;
 	border-color: var(--cyan);
 }
 
 #send {		
 	border-style: none;
+	font-size: 100%;
+	background-color: var(--green);
+	color: var(--dark);
 }
 
 .suggestion {
