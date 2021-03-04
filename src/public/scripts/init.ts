@@ -43,7 +43,7 @@ export default function init(): void {
 	new Line([new Phrase('grey', '# To send:<br>')]).write();
 	new Line([new Phrase('grey', '# press Enter with the prompt focused,<br>')]).write();
 	new Line([new Phrase('grey', '# or Ctrl + Enter with the prompt unfocused,<br>')]).write();
-	new Line([new Phrase('grey', '# or click the run button.<br><br>')]).write();
+	new Line([new Phrase('grey', '# or double click a suggestion.<br><br>')]).write();
 	new Line([new Phrase('grey', `# I've guessed that you prefer ${theme} theme.<br>`)]).write();
 	new Line([new Phrase('grey', '# You can toggle by running "theme".<br>')]).write();
 
