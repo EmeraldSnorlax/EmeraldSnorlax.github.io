@@ -5,8 +5,10 @@ import git from './commands/git';
 import clear from './commands/clear';
 import gpg from './commands/gpg';
 import whoami from './commands/whoami';
+import theme from './commands/theme';
 
 import { prompt } from './main';
+
 
 
 export default function handler(rawinput: string): void {
@@ -36,6 +38,9 @@ export default function handler(rawinput: string): void {
 		break;
 	case 'whoami':
 		whoami();
+		break;
+	case 'theme':
+		theme();
 		break;
 	default:
 		cnf(command);

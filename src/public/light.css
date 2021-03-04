@@ -1,0 +1,9 @@
+[data-theme="light"] {
+	/* Override some colours if the user prefers light theme */
+	--white: #212121 !important;
+	--dark: #f4f4f4 !important;
+	--grey: #8c9ab5 !important;
+	--yellow: #c58400 !important;
+	--green: #6ab75c !important;
+	--cyan: #6467dc !important;
+}
