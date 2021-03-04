@@ -1,6 +1,7 @@
 :root {
 	--dark: #212121;
 	--white: #f4f4f4;
+	--button-bg: #353535;
 }
 
 html {
@@ -46,7 +47,7 @@ body {
 .flyInFromRight {
 	animation: flyInFromRight 1s ease;
 }
-*/
+
 #header > * > h1 {
 	padding: 0.5em;
 	font-size: 95%;
@@ -83,5 +84,6 @@ body {
 .flexbox {
 	display: flex;
 	justify-content: center;
+	align-content: center;
 	width: 100%;
 }

@@ -15,18 +15,11 @@
 	100% { transform: translateY(0%); opacity: 1; }
 }
 
-@keyframes flyInFromTop {
-	0% { transform: translateY(-600%); }
-	75% { transform: translateY(-600%); opacity: 0; }
-	100% { transform: translateY(0%); opacity: 1; }
-}
-
 @keyframes flyInFromLeftDelay {
-	0% { transform: translateX(-33%); }
-	75% { transform: translateX(-33%); opacity: 0; }
+	0% { transform: translateX(-10%); }
+	75% { transform: translateX(-10%); opacity: 0; }
 	100% { transform: translateY(0%); opacity: 1; }
 }
-
 
 .monospace {
 	font-family: 'Roboto Mono', monospace;
@@ -110,6 +103,9 @@ li {
 	border-style: none;
 	margin-left: 1em;
 	outline: none;
+	min-height: 48px;
+	background-color: var(--dark);
+	filter: invert(0.1);
  }
 
 #prompt:focus {
@@ -122,16 +118,19 @@ li {
 	font-size: 100%;
 	background-color: var(--green);
 	color: var(--dark);
+	min-width: 50px;
+	margin: 0 10px;
 }
 
 .suggestion {
 	border-style: none;
-	padding: 0.3em;
+	padding: 0.5em;
 	border-radius: 5px;
-	background-color: var(--grey);
 	width: 100%;
-	margin: 0.5em 1vw;
-	animation: flyInFromLeftDelay 2s ease;
+	height: auto;
+	margin: 0.5em 2vw;
+	background-color: var(--button-bg);
+	min-height: 48px;
 }
 
 .suggestion:focus {
@@ -144,4 +143,9 @@ li {
 	margin-top: 1em;
 	animation: flyInFromBottom 1.5s ease;
 
+}
+
+#prompt-buttons {
+	overflow-x: auto;
+	white-space: nowrap;
 }
