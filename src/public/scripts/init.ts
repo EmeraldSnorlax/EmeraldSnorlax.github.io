@@ -34,4 +34,11 @@ export default function init(): void {
 	document.getElementById('gpg')?.addEventListener('click', () => { setPrompt('gpg'); });
 	document.getElementById('clear')?.addEventListener('click', () => { setPrompt('clear'); });
 	document.getElementById('whoami')?.addEventListener('click', () => { setPrompt('whoami'); });
+
+	// Check for Dark Reader, and show a warning
+	const darkReaderE = document.getElementsByClassName('darkreader');
+	if (darkReaderE[0]) {
+		new Line([new Phrase('grey', '<br># It looks like you are using Dark Reader.')]).write();
+		new Line([new Phrase('grey', '<br># This site is already dark. Consider disabling it to properly view this site.<br>')]).write();
+	}
 }
