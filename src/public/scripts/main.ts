@@ -1,4 +1,6 @@
 export const terminalElement = document.getElementById('terminal');
+export const themeStorage = window.localStorage;
+
 import init from './init';
 import handler from './handler';
 

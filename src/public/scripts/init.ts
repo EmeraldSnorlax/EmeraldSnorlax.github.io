@@ -1,5 +1,5 @@
 import { Line, Phrase } from './line';
-import { prompt } from './main';
+import { prompt, themeStorage } from './main';
 const commands = [
 	'help',
 	'theme',
@@ -17,11 +17,18 @@ function setPrompt(command: string): void {
 
 export default function init(): void {
 	// Theme preference
+	
 	let theme;
-	if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+	const savedTheme = themeStorage.getItem('theme');
+
+	if (savedTheme == 'light') {
 		theme = 'light';
-	} else {
+	} else if (savedTheme == 'dark') {
 		theme = 'dark';
+	} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+		theme = 'dark';
+	} else {
+		theme = 'light';
 	}
 	document.documentElement.setAttribute('data-theme', theme);
 
