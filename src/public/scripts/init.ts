@@ -1,5 +1,6 @@
 import { Line, Phrase } from './line';
 import { prompt, themeStorage } from './main';
+import handler from './handler';
 const commands = [
 	'help',
 	'theme',
@@ -12,6 +13,9 @@ const commands = [
 const promptButtons: HTMLElement = document.getElementById('prompt-buttons')!;
 
 function setPrompt(command: string): void {
+	if (command == (prompt as HTMLInputElement).value) {
+		handler(command);
+	}
 	(prompt as HTMLInputElement).value = command;  
 }
 
