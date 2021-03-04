@@ -13,11 +13,11 @@ const commands = [
 const promptButtons: HTMLElement = document.getElementById('prompt-buttons')!;
 
 function setPrompt(command: string): void {
-	(prompt as HTMLInputElement).value = command;
 	if (command == (prompt as HTMLInputElement).value) {
 		handler(command);
+	} else {
+		(prompt as HTMLInputElement).value = command;
 	}
-  
 }
 
 export default function init(): void {
