@@ -27,25 +27,26 @@ body {
 }
 
 @keyframes flyInFromLeft {
-	0% { transform: translateX(-200%); opacity: 0; }
+	0% { transform: translateX(-70%); opacity: 0; }
 	30% {opacity: 0; }
 	100% { transform: translateX(0%); opacity: 1;}
 }
 
 @keyframes flyInFromRight {
-	0% { transform: translateX(1000%); opacity: 0;}
+	0% { transform: translateX(130%); opacity: 0;}
 	50% {opacity: 0; }
 	100% { transform: translateX(0%); opacity: 1}
 }
 
+
 .flyInFromLeft {
-	animation: flyInFromLeft 2s ease;
+	animation: flyInFromLeft 1s ease;
 }
 
 .flyInFromRight {
-	animation: flyInFromRight 2s ease;
+	animation: flyInFromRight 1s ease;
 }
-
+*/
 #header > * > h1 {
 	padding: 0.5em;
 	font-size: 95%;

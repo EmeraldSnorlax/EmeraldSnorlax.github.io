@@ -131,7 +131,7 @@ li {
 	background-color: var(--grey);
 	width: 100%;
 	margin: 0.5em 1vw;
-	animation: flyInFromLeftDelay 3.5s ease;
+	animation: flyInFromLeftDelay 2s ease;
 }
 
 .suggestion:focus {
@@ -142,6 +142,6 @@ li {
 
 #prompt-container {
 	margin-top: 1em;
-	animation: flyInFromBottom 2.5s ease;
+	animation: flyInFromBottom 1.5s ease;
 
 }
