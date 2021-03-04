@@ -106,11 +106,11 @@ li {
 	min-height: 48px;
 	background-color: var(--dark);
 	filter: invert(0.1);
+	padding: 0 0.5em;
  }
 
 #prompt:focus {
-	border-bottom-style: solid;
-	border-color: var(--cyan);
+	box-shadow: inset 0 -3px 0 var(--cyan);
 }
 
 #send {		
@@ -120,6 +120,13 @@ li {
 	color: var(--dark);
 	min-width: 50px;
 	margin: 0 10px;
+	transition: ease-in-out 0.3s;
+}
+
+#send:focus, #send:hover {
+	filter: brightness(0.8);
+	transition: ease-in-out 0.3s;
+	padding-left: 1em;
 }
 
 .suggestion {
@@ -133,9 +140,8 @@ li {
 	min-height: 48px;
 }
 
-.suggestion:focus {
-	border-style: solid;
-	border-color: var(--green);
+.suggestion:focus, .suggestion:hover {
+	box-shadow: inset 0px 0px 0px 2px var(--green);
 }
 
 
