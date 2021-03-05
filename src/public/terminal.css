@@ -34,6 +34,7 @@
 	padding: 1em;
 	scrollbar-color: var(--cyan) var(--grey);
 	scrollbar-width: thin;
+	margin-bottom: 1em;
 }
 
 *::-webkit-scrollbar {
@@ -55,7 +56,7 @@
 }
 
 #terminal {
-	height: 60vh;
+	height: 50vh;
 	overflow-y: auto;
 }
 
@@ -117,7 +118,6 @@ li {
 	background-color: var(--dark);
 	filter: invert(0.1);
 	padding: 0 0.5em;
-	margin-top: 0.5em;
  }
 
 #prompt:focus {
