@@ -68,5 +68,4 @@ export default function init(): void {
 			new Line([new Phrase('grey', '<br># This site already supports themes. Consider disabling it to properly view this site.<br>')]).write();
 		}
 	}, 500);
-
 }
