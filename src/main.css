@@ -13,9 +13,13 @@
 }
 
 .nav-selected, .nav {
-	@apply p-2 flex transition-colors ease-in-out;
+	@apply p-2 md:flex transition-colors ease-in-out text-white;
 }
 
 .nav:hover {
 	@apply bg-purple-600 dark:bg-blue-grey-500;
+}
+
+.nav-selected > p, .nav > p {
+	@apply text-center hidden md:inline;
 }
