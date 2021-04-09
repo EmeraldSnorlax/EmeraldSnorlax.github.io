@@ -10,8 +10,8 @@
 
 <body class="flex min-h-screen bg-gradient-to-tr from-purple-400 via-pink-400 to-red-300 font-mono">
 	<div
-		class="m-auto bg-white rounded-2xl dark:bg-gray-700 dark:text-white dark:bg-grey-800 shadow-lg transition transform hover:shadow-2xl ease-in-out hover:-translate-y-1">
-		<div class="p-6">
+		class="m-auto rounded-t-xl bg-white dark:bg-gray-700 dark:text-white dark:bg-grey-800 shadow-lg transition transform hover:shadow-2xl ease-in-out hover:-translate-y-1">
+		<div class="p-6 mb-4">
 			<div class="flex">
 				<h1 class="text-4xl text-center">EmeraldSnorlax</h1>
 			</div>
@@ -19,10 +19,14 @@
 				<h2 class="text-left text-2xl">Rain</h2><p class="text-right text-2xl">they/them</p>
 			</div>
 		</div>
-		<nav class="bg-red-300 dark:bg-grey-600 p-4 m-0">
-			<div>Hello</div>
+		<nav class="m-0 bg-red-300 min-h-full flex dark:bg-blue-grey-700">
+			<button id="home" class="nav-selected">
+				<svg alt="Home" height="48" width="48" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"/></svg>
+			</button>
+			<button id="about" class="nav">
+				<svg alt="About" height="48" width="48" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+			</button>
 		</nav>
 	</div>
 </body>
-
 </html>

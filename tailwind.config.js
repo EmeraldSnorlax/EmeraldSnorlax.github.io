@@ -12,9 +12,11 @@ module.exports = {
       'red': colors.red,
       'white': colors.white,
       'black': colors.black,
+      'blue-grey': colors.coolGray
     }
   },
   variants: {
+    fill: ['dark'],
     extend: {},
   },
   plugins: [
