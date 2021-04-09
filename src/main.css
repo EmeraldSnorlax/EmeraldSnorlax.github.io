@@ -13,5 +13,9 @@
 }
 
 .nav-selected, .nav {
-	@apply p-2 flex;
+	@apply p-2 flex transition-colors ease-in-out;
+}
+
+.nav:hover {
+	@apply bg-purple-600 dark:bg-blue-grey-500;
 }
