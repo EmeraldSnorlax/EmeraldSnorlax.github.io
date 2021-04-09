@@ -12,7 +12,10 @@ module.exports = {
       'red': colors.red,
       'white': colors.white,
       'black': colors.black,
-      'blue-grey': colors.coolGray
+      'blue-grey': colors.coolGray,
+      'blue': colors.blue,
+      'yellow': colors.yellow,
+      'indigo': colors.indigo
     }
   },
   variants: {
