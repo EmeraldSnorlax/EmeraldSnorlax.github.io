@@ -1,8 +1,8 @@
 {
-  "name": "EmeraldSnorlax.github.io",
+  "name": "website",
   "version": "1.0.0",
   "main": "index.html",
-  "repository": "https://github.com/EmeraldSnorlax/EmeraldSnorlax.github.io",
+  "repository": "https://github.com/EmeraldSnorlax/website",
   "author": "EmeraldSnorlax <emeraldsnorlax@disroot.org>",
   "license": "AGPL-3.0-or-later",
   "devDependencies": {
@@ -10,13 +10,11 @@
     "@typescript-eslint/parser": "^4.16.1",
     "browserify": "^17.0.0",
     "eslint": "^7.21.0",
-    "grunt": "^1.3.0",
     "minify": "^7.0.1",
     "tsify": "^5.0.2",
     "typescript": "^4.2.2"
   },
   "scripts": {
-    "purecss": "rm -f v2.0.1.zip && rm -rf pure-2.0.1 && wget https://github.com/pure-css/pure/archive/v2.0.1.zip && unzip v2.0.1.zip && cd pure-2.0.1 && yarn install && npx grunt && tail -n +7 ./build/grids-min.css > ./build/grid-min.css",
-    "build": "mkdir -p ./src/public/dist && npx browserify ./src/public/scripts/main.ts -p [ tsify ] > ./src/public/dist/bundle.js && npx minify ./src/public/dist/bundle.js > ./src/public/dist/bundle.min.js && npx minify ./src/public/*.css ./pure-2.0.1/build/grids-min.css ./pure-2.0.1/build/grids-responsive-min.css > ./src/public/dist/min.css"
+    "build": "mkdir -p ./src/public/dist && npx browserify ./src/public/scripts/main.ts -p [ tsify ] > ./src/public/dist/bundle.js && npx minify ./src/public/dist/bundle.js > ./src/public/dist/bundle.min.js"
   }
 }
