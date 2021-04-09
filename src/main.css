@@ -2,18 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.nav {
-	@apply bg-red-300 dark:bg-blue-grey-700;
-}
-
 .nav-selected {
-	@apply bg-red-400 dark:bg-blue-grey-600;
+	@apply bg-purple-500 dark:bg-blue-grey-600;
 }
 
-.nav-selected > svg {
+.nav-selected > svg, .nav > svg {
 	@apply fill-current text-white p-1;
-}
-
-.nav > svg {
-	@apply dark:fill-current dark:text-black p-1
+	height: 48px;
+	width: 48px;
 }
