@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html class="" lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -23,7 +23,7 @@
 		</div>
 
 		<!-- About -->
-		<div class="p-6 mb-4" id="home-card">
+		<div class="p-6 mb-4 hidden" id="about-card">
 			<h1 class="text-4xl text-center">About</h1>
 			<p class="text-2xl">Hello!</p>
 			<p>I make things. And sometimes, they work.</p>
@@ -36,6 +36,45 @@
 			<br>
 			<h2 class="text-xl">I like open source things.</h2>
 			<p>Arch Linux is my daily driver OS, and I have some experience using Linux as a server OS too.</p>
+		</div>
+
+		<!-- Projects -->
+		<div class="p-6 mb-4" id="project-card">
+			<h1 class="text-4xl text-center">Projects</h1>
+
+			<div class="project-card">
+				<div class="flex justify-between">
+					<a class="p-3" href="https://gitlab.com/EmeraldSnorlax/terrafinder" target="_blank"><h2 class="text-xl">Terrafinder</h2></a>
+					<p class="text-right p-3">A map guessing game</p>
+				</div>
+				<hr>
+				<p class="text-center my-2">JavaScript + Express.js + PureCSS</p>
+				<p>Guess a location based on the image served.</p>
+				<p class="text-grey-400 text-right">GNU AGPL-3.0</p>
+			</div>
+
+			<div class="project-card">
+				<div class="flex justify-between">
+					<a class="p-3" href="https://github.com/EmeraldSnorlax/bait" target="_blank"><h2 class="text-xl">Bait</h2></a>
+					<p class="text-right p-3">A URL shortener</p>
+				</div>
+				<hr>
+				<p class="text-center my-2">TypeScript + Express.js + EJS + SQLite</p>
+				<p>Create a redirect link with a customised social embed.</p>
+				<p class="text-grey-400 text-right">GNU AGPL-3.0</p>
+			</div>
+
+			<div class="project-card">
+				<div class="flex justify-between">
+					<a class="p-3" href="https://github.com/EmeraldSnorlax/website" target="_blank"><h2 class="text-xl">This site</h2></a>
+					<p class="text-right p-3">A personal site</p>
+				</div>
+				<hr>
+				<p class="text-center my-2">TailwindCSS</p>
+				<p>Create a redirect link with a customised social embed.</p>
+				<p class="text-grey-400 text-right">GNU AGPL-3.0</p>
+			</div>
+
 		</div>
 
 		<!-- Navbar -->

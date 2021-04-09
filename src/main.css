@@ -23,3 +23,11 @@
 .nav-selected > p, .nav > p {
 	@apply text-center hidden md:inline;
 }
+
+a {
+	@apply text-blue-400 underline;
+}
+
+.project-card {
+	@apply border-blue-200 dark:border-blue-grey-600 border rounded-md p-2 my-4 shadow-md;
+}
