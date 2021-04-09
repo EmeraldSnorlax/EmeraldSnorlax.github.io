@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html class="dark" lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -12,9 +12,9 @@
 	<div
 		class="m-auto rounded-t-xl bg-white dark:bg-gray-700 dark:text-white dark:bg-grey-800 shadow-lg transition transform hover:shadow-2xl ease-in-out hover:-translate-y-1">
 		<div class="p-6 mb-4">
-			<div class="flex">
+
 				<h1 class="text-4xl text-center">EmeraldSnorlax</h1>
-			</div>
+
 			<div class="flex justify-between">
 				<h2 class="text-left text-2xl">Rain</h2>
 				<p class="text-right text-2xl">they/them</p>
@@ -22,14 +22,15 @@
 		</div>
 		<nav class="m-0 bg-purple-400 min-h-full flex dark:bg-blue-grey-700">
 			<button id="home" class="nav-selected">
-				<svg alt="Home" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+				<p class="text-center">Home</p>
+				<svg alt="Home" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
 					<title>Home</title>
 					<path d="M0 0h24v24H0V0z" fill="none" />
-					<path
-						d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z" />
+					<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5z" />
 				</svg>
 			</button>
 			<button id="about" class="nav">
+				<p class="text-center">About</p>
 				<svg alt="About" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
 					fill="#000000">
 					<title>About me</title>
@@ -38,21 +39,24 @@
 				</svg>
 			</button>
 			<button id="projects" class="nav">
+				<p class="text-center">Projects</p>
 				<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
 					<title>Projects</title>
 					<path d="M0 0h24v24H0V0z" fill="none" />
 					<path d="M22 6h-6V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H2v15h20V6zm-8 0h-4V4h4v2z" />
 				</svg>
 			</button>
-			<button id="links" class="nav">
-				<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-					<title>Links</title>
+			<button id="accounts" class="nav">
+				<p class="text-center">Accounts</p>
+				<svg alt="Accounts" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+					<title>Accounts</title>
 					<path d="M0 0h24v24H0V0z" fill="none" />
 					<path
-						d="M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zm-3-4h8v2H8zm9-4h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zm-3-4h8v2H8z" />
+						d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z" />
 				</svg>
 			</button>
 			<button id="pgp" class="nav">
+				<p class="text-center">PGP</p>
 				<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
 					<title>OpenPGP</title>
 					<path d="M0 0h24v24H0V0z" fill="none" />
@@ -60,13 +64,6 @@
 						d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
 				</svg>
 			</button>
-			<button id="source" class="nav">
-				<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-					<title>Site information</title>
-					<path d="M0 0h24v24H0V0z" fill="none" />
-					<path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
-				</svg>
-				<button>
 		</nav>
 	</div>
 </body>

@@ -11,3 +11,7 @@
 	height: 48px;
 	width: 48px;
 }
+
+.nav-selected, .nav {
+	@apply p-2 flex;
+}
