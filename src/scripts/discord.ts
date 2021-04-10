@@ -8,17 +8,17 @@ export function init() {
   const discordButton = document.getElementById('discord');
   const notifier = document.getElementById('account-copy-notifier')!;
 
-  discordButton!.addEventListener(('click'), () => {
+  discordButton!.addEventListener('click', () => {
     copy(discordAccount, () => {
       notifier.innerText = `${discordAccount} copied!`;
     });
   });
 
-  discordButton!.addEventListener(('mouseover'), () => {
+  discordButton!.addEventListener('mouseover', () => {
     notifier.innerText = `Click to copy ${discordAccount}`;
   });
 
-  discordButton!.addEventListener(('mouseout'), () => {
+  discordButton!.addEventListener('mouseout', () => {
     notifier.innerText = defaultText;
   });
 }
