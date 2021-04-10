@@ -141,8 +141,8 @@
 				</svg>
 
 				<a rel="noopener" tabindex="0" href="mailto:emeraldsnorlax@disroot.org" id="email">
-					<svg class="account-icon" width="48" height="48" xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 24 24" width="24px" fill="#000000">
+					<svg class="account-icon" width="48" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+						width="24px" fill="#000000">
 						<title>E-Mail</title>
 						<path d="M0 0h24v24H0V0z" fill="none" />
 						<path
@@ -172,12 +172,14 @@
 			<button
 				class="flex items-center w-full bg-pink-100 hover:bg-pink-200 dark:bg-blue-grey-700 dark:hover:bg-blue-grey-600 p-2 rounded-md shadow-md m-2 transition-all"
 				id="copy-fingerprint">
-				<svg class="fill-current mr-4" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+				<div id="copy-icon-container">
+					<svg class="fill-current mr-4" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
 					fill="#000000">
 					<title>Copy</title>
 					<path d="M0 0h24v24H0V0z" fill="none" />
 					<path d="M16 1H2v16h2V3h12V1zm5 4H6v18h15V5zm-2 16H8V7h11v14z" />
 				</svg>
+				</div>
 				<p id="fingerprint-text">79C9 389B 5364 37A3 DE0A FAC9 5793 0CE7 0D34 23B4</p>
 			</button>
 
@@ -231,9 +233,12 @@
 		</button>
 
 		<button id="pgp" class="nav">
-			<div class="absolute w-auto bottom-full p-4 bg-white dark:bg-blue-grey-700 text-black dark:text-white rounded-t-md hidden" id="pgp-hint">
+			<div
+				class="absolute w-auto bottom-full p-4 bg-white dark:bg-blue-grey-700 text-black dark:text-white rounded-t-md hidden"
+				id="pgp-hint">
 				<p class="text-left">Don't forget to encrypt your message!</p>
-				<svg class="fill-current animate-bounce m-2" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+				<svg class="fill-current animate-bounce m-2" xmlns="http://www.w3.org/2000/svg" height="24px"
+					viewBox="0 0 24 24" width="24px" fill="#000000">
 					<path d="M0 0h24v24H0V0z" fill="none" />
 					<path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z" />
 				</svg>
