@@ -20,6 +20,6 @@
     "typescript": "^4.2.2"
   },
   "scripts": {
-    "build": "mkdir -p ./src/public/dist && npx browserify ./src/public/scripts/main.ts -p [ tsify ] > ./src/public/dist/bundle.js && npx minify ./src/public/dist/bundle.js > ./src/public/dist/bundle.min.js"
+    "build": "mkdir -p ./src/dist && npx browserify ./src/scripts/main.ts -p [ tsify ] > ./src/dist/bundle.js && npx minify ./src/dist/bundle.js > ./src/dist/bundle.min.js"
   }
 }
