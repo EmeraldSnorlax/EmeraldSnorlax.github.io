@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html class="" lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -142,6 +142,33 @@
 
 			</div>
 		</div>
+
+		<!-- PGP -->
+		<div class="p-6 mb-4 hidden" id="pgp-card">
+			<h1 class="sm:text-4xl text-3xl text-center">OpenPGP</h1>
+			<div class="container">
+				<button class="flex w-full bg-pink-300 hover:bg-pink-400 dark:bg-blue-600 dark:hover:bg-blue-500 p-2 rounded-md shadow-md m-2 transition-all" id="download-key">
+					<svg class="fill-current mr-2" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24"
+						width="24px" fill="#000000">
+						<path d="M0 0h24v24H0V0z" fill="none" />
+						<path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+					</svg>
+					<p>Download my public key</p>
+				</button>
+			</div>
+
+			<button class="flex w-full bg-pink-100 hover:bg-pink-200 dark:bg-blue-grey-700 dark:hover:bg-blue-grey-600 p-2 rounded-md shadow-md m-2 transition-all" id="copy-fingerprint">
+				<svg class="fill-current mr-2" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+					fill="#000000">
+					<title>Copy</title>
+					<path d="M0 0h24v24H0V0z" fill="none" />
+					<path d="M16 1H2v16h2V3h12V1zm5 4H6v18h15V5zm-2 16H8V7h11v14z" />
+				</svg>
+				<p id="fingerprint-text">79C9 389B 5364 37A3 DE0A FAC9 5793 0CE7 0D34 23B4</p>
+			</button>
+
+		</div>
+	</div>
 	</div>
 
 	<!-- Navbar -->

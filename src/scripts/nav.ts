@@ -8,7 +8,7 @@ const pages: Page[] = [
   { card: document.getElementById('about-card')!, button: document.getElementById('about')! },
   { card: document.getElementById('project-card')!, button: document.getElementById('projects')! },
   { card: document.getElementById('account-card')!, button: document.getElementById('accounts')! },
-
+  { card: document.getElementById('pgp-card')!, button: document.getElementById('pgp')! },
 ];
 
 let selected: Page = { card: pages[0].card, button: pages[0].button };
