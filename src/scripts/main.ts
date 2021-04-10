@@ -1,3 +1,7 @@
 import * as discord from './discord';
+import * as nav from './nav';
 
-discord.init();
+window.onload = () => {
+  nav.init();
+  discord.init();
+};
