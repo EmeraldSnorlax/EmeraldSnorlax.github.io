@@ -31,3 +31,7 @@ a {
 .project-card {
 	@apply border-blue-200 dark:border-blue-grey-600 border rounded-md p-2 my-4 shadow-md hover:shadow-xl transition-shadow;
 }
+
+.account-icon {
+	@apply dark:fill-current dark:text-white transform hover:scale-105 transition-transform cursor-pointer
+}
