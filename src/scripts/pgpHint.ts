@@ -3,10 +3,13 @@ const hint = document.getElementById('pgp-hint')!;
 
 // eslint-disable-next-line import/prefer-default-export
 export function init() {
-  email.addEventListener('mouseenter', () => {
-    hint.classList.remove('hidden', 'invisible');
+  email.addEventListener('mouseover', () => {
+    hint.classList.remove('hidden');
+  });
+
+  email.addEventListener('mouseout', () => {
     setTimeout(() => {
-      hint.classList.add('hidden', 'invisible');
-    }, 3500);
+      hint.classList.add('hidden');
+    }, 2000);
   });
 }
