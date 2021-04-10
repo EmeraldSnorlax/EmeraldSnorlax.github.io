@@ -13,7 +13,7 @@
 }
 
 .nav-selected, .nav {
-	@apply p-2 md:flex transition-colors ease-in-out text-white;
+	@apply p-2 md:flex transition-colors ease-in-out text-white md:items-center;
 }
 
 .nav:hover {
