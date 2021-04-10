@@ -1,14 +1,18 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  purge: [
-    './src/**/*.html',
-  ],
+  purge: {
+    content:  ['./src/**/*.html'],
+    options: {
+      keyframes: true,
+      fontFace: true,
+    }
+    },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {},
     colors: {
-      'grey': colors.trueGray, 
+      'grey': colors.trueGray,
       'purple': colors.purple,
       'pink': colors.pink,
       'red': colors.red,

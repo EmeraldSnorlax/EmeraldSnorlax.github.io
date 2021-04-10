@@ -21,7 +21,7 @@
   },
   "scripts": {
     "build": "mkdir -p ./src/dist && npx browserify ./src/scripts/main.ts -p [ tsify ] > ./src/dist/bundle.js && npx minify ./src/dist/bundle.js > ./src/dist/bundle.min.js",
-    "css": "yarn tailwindcss build ./src/main.css -o ./src/dist/bundle.css"
+    "css": "yarn tailwindcss build ./src/main.css -o ./src/dist/bundle.css  && npx minify ./src/dist/bundle.css > ./src/dist/bundle.min.css"
   },
   "dependencies": {}
 }
