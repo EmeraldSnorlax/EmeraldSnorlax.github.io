@@ -10,6 +10,6 @@ export function init() {
   email.addEventListener('mouseout', () => {
     setTimeout(() => {
       hint.classList.add('hidden');
-    }, 2000);
+    }, 5000);
   });
 }
