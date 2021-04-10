@@ -8,14 +8,15 @@
 	<link rel="stylesheet" href="./dist/bundle.css">
 </head>
 
-<body class="flex min-h-screen bg-gradient-to-tr from-purple-400 via-pink-400 to-red-300 font-mono">
+<body class="flex pb-16 flex-col h-screen bg-cover bg-gradient-to-tr from-purple-400 via-pink-400 to-red-300 font-mono">
+
 	<!-- Card -->
 	<div
-		class="m-auto rounded-t-xl bg-white dark:bg-gray-700 dark:text-white dark:bg-grey-800 shadow-lg transition transform hover:shadow-2xl ease-in-out">
+		class="flex overflow-y-auto m-auto rounded-xl bg-white dark:bg-gray-700 dark:text-white dark:bg-grey-800 shadow-lg transition-all transform hover:shadow-2xl ease-in-out max-w-xl">
 
 		<!-- Home -->
 		<div class="p-6 mb-4" id="home-card">
-			<h1 class="text-4xl text-center">EmeraldSnorlax</h1>
+			<h1 class="sm:text-4xl text-3xl text-center">EmeraldSnorlax</h1>
 			<div class="flex justify-between">
 				<h2 class="text-left text-2xl">Rain</h2>
 				<p class="text-right text-2xl">they/them</p>
@@ -39,7 +40,7 @@
 		</div>
 
 		<!-- Projects -->
-		<div class="p-6 mb-4 hidden" id="project-card">
+		<div class="p-6 hidden" id="project-card">
 			<h1 class="text-4xl text-center">Projects</h1>
 
 			<div class="project-card">
@@ -86,7 +87,7 @@
 		<!-- Accounts -->
 		<div class="p-6 mb-4 hidden" id="account-card">
 			<h1 class="text-4xl text-center">Accounts</h1>
-			<p id="account-copy-notifier" class="text-center text-2xl my-4">You can find me online at:</p>
+			<p id="account-copy-notifier" class="text-center sm:text-2xl text-lg my-4">You can find me online at:</p>
 
 			<div class="flex flex-wrap justify-around m-auto">
 
@@ -130,8 +131,8 @@
 				</svg>
 
 				<a tabindex="0" href="mailto:emeraldsnorlax@disroot.org">
-					<svg id="email" class="account-icon" width="48" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px"
-						fill="#000000">
+					<svg id="email" class="account-icon" width="48" height="48" xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24" width="24px" fill="#000000">
 						<title>E-Mail</title>
 						<path d="M0 0h24v24H0V0z" fill="none" />
 						<path
@@ -141,65 +142,62 @@
 
 			</div>
 		</div>
-
-		<!-- Navbar -->
-		<nav class="m-0 bg-purple-400 min-h-full md:flex dark:bg-blue-grey-700">
-			<button id="home" class="nav-selected">
-				<p>Home</p>
-				<svg alt="Home" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-					fill="#000000">
-					<title>Home</title>
-					<path d="M0 0h24v24H0V0z" fill="none" />
-					<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5z" />
-				</svg>
-			</button>
-
-			<button id="about" class="nav">
-				<p>About</p>
-				<svg alt="About" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-					fill="#000000">
-					<title>About me</title>
-					<path d="M0 0h24v24H0V0z" fill="none" />
-					<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
-				</svg>
-			</button>
-
-			<button id="projects" class="nav">
-				<p>Projects</p>
-				<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-					<title>Projects</title>
-					<path d="M0 0h24v24H0V0z" fill="none" />
-					<path d="M22 6h-6V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H2v15h20V6zm-8 0h-4V4h4v2z" />
-				</svg>
-			</button>
-
-			<button id="accounts" class="nav">
-				<p>Accounts</p>
-				<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24"
-					width="24px" fill="#000000">
-					<title>Accounts</title>
-					<g>
-						<rect fill="none" height="24" width="24" />
-					</g>
-					<g>
-						<path
-							d="M4,6H2v16h16v-2H4V6z M6,2v16h16V2H6z M14,5c1.66,0,3,1.34,3,3c0,1.66-1.34,3-3,3s-3-1.34-3-3C11,6.34,12.34,5,14,5z M7.76,16c1.47-1.83,3.71-3,6.24-3s4.77,1.17,6.24,3H7.76z" />
-					</g>
-				</svg>
-			</button>
-
-			<button id="pgp" class="nav">
-				<p>PGP</p>
-				<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-					<title>OpenPGP</title>
-					<path d="M0 0h24v24H0V0z" fill="none" />
-					<path
-						d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
-				</svg>
-			</button>
-
-		</nav>
 	</div>
+
+	<!-- Navbar -->
+	<nav class="mx-0 mb-0 bg-purple-400 flex dark:bg-blue-grey-700 w-full absolute bottom-0">
+		<button id="home" class="nav-selected">
+			<p>Home</p>
+			<svg alt="Home" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+				<title>Home</title>
+				<path d="M0 0h24v24H0V0z" fill="none" />
+				<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5z" />
+			</svg>
+		</button>
+
+		<button id="about" class="nav">
+			<p>About</p>
+			<svg alt="About" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+				<title>About me</title>
+				<path d="M0 0h24v24H0V0z" fill="none" />
+				<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+			</svg>
+		</button>
+
+		<button id="projects" class="nav">
+			<p>Projects</p>
+			<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+				<title>Projects</title>
+				<path d="M0 0h24v24H0V0z" fill="none" />
+				<path d="M22 6h-6V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H2v15h20V6zm-8 0h-4V4h4v2z" />
+			</svg>
+		</button>
+
+		<button id="accounts" class="nav">
+			<p>Accounts</p>
+			<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24"
+				width="24px" fill="#000000">
+				<title>Accounts</title>
+				<g>
+					<rect fill="none" height="24" width="24" />
+				</g>
+				<g>
+					<path
+						d="M4,6H2v16h16v-2H4V6z M6,2v16h16V2H6z M14,5c1.66,0,3,1.34,3,3c0,1.66-1.34,3-3,3s-3-1.34-3-3C11,6.34,12.34,5,14,5z M7.76,16c1.47-1.83,3.71-3,6.24-3s4.77,1.17,6.24,3H7.76z" />
+				</g>
+			</svg>
+		</button>
+
+		<button id="pgp" class="nav">
+			<p>PGP</p>
+			<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+				<title>OpenPGP</title>
+				<path d="M0 0h24v24H0V0z" fill="none" />
+				<path
+					d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
+			</svg>
+		</button>
+	</nav>
 	<script src="./dist/bundle.min.js"></script>
 </body>
 
