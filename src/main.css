@@ -33,5 +33,5 @@ a {
 }
 
 .account-icon {
-	@apply dark:fill-current dark:text-white transform hover:scale-105 transition-transform cursor-pointer
+	@apply dark:fill-current dark:text-white transform hover:scale-105 transition-transform cursor-pointer m-5;
 }
