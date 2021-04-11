@@ -16,8 +16,11 @@ yarn install
 # If you are developing locally, set your NODE_ENV to whatever you want.
 # Be sure to swap out the loaded CSS bundle.
 
-yarn css # Build the CSS bundle.
-yarn build # Build the JS bundle.
+yarn css
+yarn js
+yarn html
+
+yarn build # or build everything
 ```
 
 Then just point your webserver to serve from `dist/`, and `index.html`.
