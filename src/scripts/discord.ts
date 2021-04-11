@@ -21,4 +21,24 @@ export function init() {
   discordButton!.addEventListener('mouseout', () => {
     notifier.innerText = defaultText;
   });
+
+  // Keyboard users
+  discordButton!.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      copy(discordAccount, () => {
+        notifier.innerText = `${discordAccount} copied!`;
+        setTimeout(() => {
+          notifier.innerText = defaultText;
+        }, 3000);
+      });
+    }
+  });
+
+  discordButton!.addEventListener('focus', () => {
+    notifier.innerText = 'Press Enter to copy discord.';
+  });
+
+  discordButton!.addEventListener('focusout', () => {
+    notifier.innerText = defaultText;
+  });
 }
