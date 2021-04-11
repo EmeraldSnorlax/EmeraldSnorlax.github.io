@@ -10,7 +10,7 @@ Icons from [Material Icons](https://fonts.google.com/icons?selected=Material+Ico
 
 Deploying / running:
 
-```
+```bash
 yarn install
 # If you are deploying to production, **SET YOUR `NODE_ENV` TO `production`**!!!!
 # If you are developing locally, set your NODE_ENV to whatever you want.
