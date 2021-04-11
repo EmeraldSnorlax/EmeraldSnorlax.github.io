@@ -20,4 +20,4 @@ yarn css # Build the CSS bundle.
 yarn build # Build the JS bundle.
 ```
 
-Then just point your webserver to serve from `src/`.
+Then just point your webserver to serve from `dist/`, and `index.html`.

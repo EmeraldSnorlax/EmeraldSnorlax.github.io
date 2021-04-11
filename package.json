@@ -10,6 +10,7 @@
     "@typescript-eslint/parser": "^4.21.0",
     "autoprefixer": "^10.2.5",
     "browserify": "^17.0.0",
+    "ejs": "^3.1.6",
     "eslint": "^7.23.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
@@ -20,8 +21,10 @@
     "typescript": "^4.2.2"
   },
   "scripts": {
-    "build": "mkdir -p ./src/dist && npx browserify ./src/scripts/main.ts -p [ tsify ] > ./src/dist/bundle.js && npx minify ./src/dist/bundle.js > ./src/dist/bundle.min.js",
-    "css": "yarn tailwindcss build ./src/main.css -o ./src/dist/bundle.css  && npx minify ./src/dist/bundle.css > ./src/dist/bundle.min.css"
+    "js": "mkdir -p ./dist && npx browserify ./src/scripts/main.ts -p [ tsify ] > ./dist/bundle.js && npx minify ./dist/bundle.js > ./dist/bundle.min.js",
+    "css": "yarn tailwindcss build ./src/main.css -o ./dist/bundle.css  && npx minify ./dist/bundle.css > ./dist/bundle.min.css",
+    "html": "yarn ejs ./src/pages/index.ejs -o ./dist/index.pretty.html && npx minify ./dist/index.pretty.html > ./dist/index.html",
+    "build": "yarn js && yarn css && yarn html && cp EmeraldSnorlax.pub.gpg ./dist/EmeraldSnorlax.pub.gpg"
   },
   "dependencies": {}
 }

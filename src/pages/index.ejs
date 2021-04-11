@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html class="font-mono" lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="EmeraldSnorlax's website">
+	<meta property="og:title" content="EmeraldSnorlax">
+	<meta content="#CB80EE" name="theme-color">
+	<title>EmeraldSnorlax</title>
+	<link rel="stylesheet" href="./bundle.min.css">
+</head>
+
+<body class="flex pb-16 flex-col h-screen bg-cover bg-gradient-to-tr from-purple-400 via-pink-400 to-red-300 font-mono">
+
+	<!-- Card -->
+	<div
+		class="flex overflow-y-auto m-auto rounded-xl bg-white dark:bg-gray-700 dark:text-white dark:bg-grey-800 shadow-lg transition-all transform hover:shadow-2xl ease-in-out max-w-xl">
+
+		<%- include('./src/pages/partials/home.ejs'); _%>
+		<%- include('./src/pages/partials/about.ejs'); _%>
+		<%- include('./src/pages/partials/projects.ejs'); _%>
+		<%- include('./src/pages/partials/accounts.ejs'); _%>
+		<%- include('./src/pages/partials/pgp.ejs'); _%>
+		
+	</div>
+	<%- include('./src/pages/partials/nav.ejs'); _%>
+	<script src="./bundle.min.js"></script>
+</body>
+
+</html>

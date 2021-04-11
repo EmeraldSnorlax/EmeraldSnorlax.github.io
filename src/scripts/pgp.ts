@@ -22,7 +22,7 @@ const iconContainer = document.getElementById('copy-icon-container')!;
 // eslint-disable-next-line import/prefer-default-export
 export function init() {
   download.addEventListener('click', () => {
-    window.open('./dist/EmeraldSnorlax.pub.gpg', '_self');
+    window.open('./EmeraldSnorlax.pub.gpg', '_self');
   });
   fingerprint.addEventListener('click', () => {
     copy(keyFingerprint, () => {
