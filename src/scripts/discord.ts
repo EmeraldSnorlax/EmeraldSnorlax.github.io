@@ -2,7 +2,7 @@ import copy from './copy';
 
 // eslint-disable-next-line import/prefer-default-export
 export function init() {
-  const discordAccount = '『EmeraldSnorlax』#8434';
+  const discordAccount = 'Rain (Snorlax)#0727';
   const defaultText = 'You can find me online at:';
 
   const discordButton = document.getElementById('discord');
