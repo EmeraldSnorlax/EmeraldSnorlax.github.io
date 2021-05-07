@@ -45,7 +45,7 @@
 
 	main:after {
 		transform: translateX(4em) rotate(10deg) translateY(4em);
-		animation-duration: 5s;
+		animation-duration: 5s !important;
 	}
 	@keyframes rainfall {
 		from {
