@@ -3,6 +3,7 @@
 	import { intro, motion } from "./stores";
 	import Intro from "./components/Intro.svelte";
 	import ToggleMotion from "./components/ToggleMotion.svelte";
+	import Content from './Content.svelte';
 	onMount(() => {
 		setTimeout(() => ($intro = true), 2000);
 		if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -14,6 +15,8 @@
 <main class={$motion} data-testid="main">
 	{#if !$intro}
 		<Intro />
+	{:else}
+		<Content />
 	{/if}
 	<ToggleMotion />
 </main>
