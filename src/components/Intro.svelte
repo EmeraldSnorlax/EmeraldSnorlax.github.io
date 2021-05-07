@@ -34,6 +34,8 @@
     height: 95%;
   }
   svg {
-    margin: 40%;
+    margin: 0%;
+    max-height: 40%;
+    max-width: 50%;
   }
 </style>

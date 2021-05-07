@@ -23,5 +23,10 @@
     border: none;
     background-color: #323232;
     padding: 1em;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  button:hover {
+    filter: brightness(1.1);
   }
 </style>
