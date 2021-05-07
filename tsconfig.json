@@ -1,8 +1,8 @@
 {
+  "extends": "@tsconfig/svelte/tsconfig.json",
   "include": ["src", "types"],
   "compilerOptions": {
     "module": "esnext",
-    "target": "esnext",
     "moduleResolution": "node",
     "jsx": "preserve",
     "baseUrl": "./",
@@ -13,17 +13,16 @@
       //     "*": [".snowpack/types/*"]
       // More info: https://www.snowpack.dev/guides/streaming-imports
     },
-    "allowSyntheticDefaultImports": true,
-    "importsNotUsedAsValues": "error",
-    /* more strict checking for errors that per-file transpilers like `esbuild` would crash */
-    "isolatedModules": true,
-    /* noEmit - We only use TypeScript for type checking. */
+    /* noEmit - Snowpack builds (emits) files, not tsc. */
     "noEmit": true,
     /* Additional Options */
     "strict": true,
     "skipLibCheck": true,
+    "types": ["mocha", "snowpack-env"],
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "useDefineForClassFields": true
+    "useDefineForClassFields": true,
+    "allowSyntheticDefaultImports": true,
+    "importsNotUsedAsValues": "error"
   }
 }
