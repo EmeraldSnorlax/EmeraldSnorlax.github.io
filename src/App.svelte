@@ -1,21 +1,27 @@
 <script lang="typescript">
 	import { onMount } from "svelte";
-	import { intro } from "./stores";
+	import { intro, motion } from "./stores";
 	import Intro from "./components/Intro.svelte";
+	import ToggleMotion from "./components/ToggleMotion.svelte";
 	onMount(() => {
 		setTimeout(() => ($intro = true), 2000);
+		if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+			$motion = "";
+		}
 	});
 </script>
 
-<main>
+<main class={$motion} data-testid="main">
 	{#if !$intro}
 		<Intro />
 	{/if}
+	<ToggleMotion />
 </main>
 
 <style>
 	main {
 		position: relative;
+		z-index: 1;
 		overflow: hidden;
 		width: 100%;
 		height: 100%;
@@ -23,6 +29,7 @@
 	main:before,
 	main:after {
 		content: "";
+		z-index: -1;
 		position: absolute;
 		left: -50%;
 		top: -50%;
@@ -47,9 +54,8 @@
 			background-position: 64px 1088px;
 		}
 	}
-	@media (prefers-reduced-motion: reduce) {
-		main:before, main:after {
-			background-image: none;
-		}
+	main.safe:before,
+	main.safe:after {
+		background-image: none;
 	}
 </style>
