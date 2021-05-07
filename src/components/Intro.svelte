@@ -31,7 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 95%;
   }
   svg {
     margin: 40%;
