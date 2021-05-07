@@ -5,7 +5,8 @@
     "test": "web-test-runner \"src/**/*.test.ts\" --node-resolve --playwright --browsers chromium firefox"
   },
   "dependencies": {
-    "svelte": "^3.37.0"
+    "svelte": "^3.37.0",
+    "svelte-particles": "^1.9.3"
   },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.1.0",
