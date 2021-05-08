@@ -13,3 +13,7 @@ h2 {
   font-weight: 600;
   font-size: x-large;
 }
+
+button {
+  cursor: pointer;
+}
