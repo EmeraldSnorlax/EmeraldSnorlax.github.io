@@ -15,6 +15,7 @@
 <main in:fly={{ y: 600, duration: 400 }} out:fly={{ y: 600, duration: 400 }}>
   <div class="project-container">
     <h2>Projects</h2>
+    <Back />
     <div class="projects">
       {#each projects as project, i}
         <div
@@ -24,7 +25,7 @@
           }}
           on:click={() => window.open(`${project.html_url}`)}
           role="button"
-          tabindex={i + 2}
+          tabindex={i + 1}
           class="project"
         >
           <h3>{project.name}</h3>
@@ -59,7 +60,6 @@
         </div>
       {/each}
     </div>
-    <Back />
   </div>
 </main>
 
