@@ -9,7 +9,6 @@ describe('<ToggleMotion>',  () => {
     const main = getByTestId('main');
     expect(main.className).to.not.include('safe')
     await fireEvent.click(btn)
-    const bg = getByTestId(/main/)
     expect(main.className).to.include('safe');
   });
 });
