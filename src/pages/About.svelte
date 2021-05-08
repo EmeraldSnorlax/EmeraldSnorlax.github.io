@@ -3,6 +3,6 @@
 </script>
 
 <div>
-  <h2>Projects</h2>
+  <h2>About</h2>
   <Back />
 </div>
