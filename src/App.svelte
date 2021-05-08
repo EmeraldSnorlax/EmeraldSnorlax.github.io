@@ -1,9 +1,9 @@
 <script lang="typescript">
 	import { onMount } from "svelte";
-	import { intro, motion } from "./stores";
+	import { intro, location, motion } from "./stores";
 	import Intro from "./components/Intro.svelte";
 	import ToggleMotion from "./components/ToggleMotion.svelte";
-	import Content from './Content.svelte';
+	import Home from './Home.svelte';
 	onMount(() => {
 		setTimeout(() => ($intro = true), 2000);
 		if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -15,8 +15,8 @@
 <main class={$motion} data-testid="main">
 	{#if !$intro}
 		<Intro />
-	{:else}
-		<Content />
+	{:else if $location === 'home'}
+		<Home />
 	{/if}
 	<ToggleMotion />
 </main>
