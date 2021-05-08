@@ -1,6 +1,6 @@
 <script lang="typescript">
-  import { scale } from "svelte/transition";
-  import { backInOut } from "svelte/easing";
+  import { fade } from "svelte/transition";
+  import { cubicIn, linear } from "svelte/easing";
   import {
     mdiChevronDoubleUp,
     mdiChevronDoubleRight,
@@ -10,7 +10,9 @@
 import { location } from "./stores";
 </script>
 
-<nav in:scale={{ duration: 1500, easing: backInOut }}>
+<nav in:fade={{ duration: 800, easing: cubicIn }}
+  out:fade={{ duration: 100, easing: linear }}
+>
   <div>
     <h1>Hello!</h1>
     <h2>I'm Rain.</h2>

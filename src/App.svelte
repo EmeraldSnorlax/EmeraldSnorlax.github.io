@@ -3,7 +3,11 @@
 	import { intro, location, motion } from "./stores";
 	import Intro from "./components/Intro.svelte";
 	import ToggleMotion from "./components/ToggleMotion.svelte";
-	import Home from './Home.svelte';
+	import Home from "./Home.svelte";
+	import Projects from "./pages/Projects.svelte";
+	import Pgp from "./pages/PGP.svelte";
+	import Accounts from "./pages/Accounts.svelte";
+	import About from "./pages/About.svelte";
 	onMount(() => {
 		setTimeout(() => ($intro = true), 2000);
 		if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -15,8 +19,16 @@
 <main class={$motion} data-testid="main">
 	{#if !$intro}
 		<Intro />
-	{:else if $location === 'home'}
+	{:else if $location === "home"}
 		<Home />
+	{:else if $location === "projects"}
+		<Projects />
+	{:else if $location === "pgp"}
+		<Pgp />
+	{:else if $location === "accounts"}
+		<Accounts />
+	{:else if $location === "about"}
+		<About />
 	{/if}
 	<ToggleMotion />
 </main>
