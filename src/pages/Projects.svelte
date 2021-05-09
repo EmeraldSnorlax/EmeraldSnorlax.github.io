@@ -16,12 +16,17 @@
   <div class="project-container">
     <h2>Projects</h2>
     <Back />
+    {#if projects.length === 0}
+      <p class="loading">
+        Fetching data from GitHub...
+      </p>
+    {/if}
     <div class="projects">
       {#each projects as project, i}
         <div
           in:fade
           on:keypress={(e) => {
-            if (e.key === 'Enter') window.open(`${project.html_url}`);
+            if (e.key === "Enter") window.open(`${project.html_url}`);
           }}
           on:click={() => window.open(`${project.html_url}`)}
           role="button"
@@ -70,6 +75,19 @@
     cursor: pointer;
   }
 
+  .loading {
+    animation: bounce 0.5s ease-in-out infinite;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
   div.project {
     background-color: #424242;
     padding: 5px 1em;
@@ -116,9 +134,9 @@
   .Shell {
     color: #89e051;
   }
-  
+
   .JavaScript {
-    color: #F7DF1E
+    color: #f7df1e;
   }
 
   h2 {
