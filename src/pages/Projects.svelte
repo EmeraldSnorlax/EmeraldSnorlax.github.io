@@ -17,9 +17,7 @@
     <h2>Projects</h2>
     <Back />
     {#if projects.length === 0}
-      <p class="loading">
-        Fetching data from GitHub...
-      </p>
+      <p class="loading">Fetching data from GitHub...</p>
     {/if}
     <div class="projects">
       {#each projects as project, i}
@@ -137,10 +135,6 @@
 
   .JavaScript {
     color: #f7df1e;
-  }
-
-  h2 {
-    font-size: xxx-large;
   }
 
   main {
