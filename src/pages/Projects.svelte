@@ -116,6 +116,10 @@
   .Shell {
     color: #89e051;
   }
+  
+  .JavaScript {
+    color: #F7DF1E
+  }
 
   h2 {
     font-size: xxx-large;
