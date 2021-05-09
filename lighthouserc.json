@@ -1,10 +1,27 @@
 {
 	"ci": {
 		"collect": {
-			"staticDistDir": "./build"
+			"staticDistDir": "./build",
+			"numberOfRuns": 3
 		},
 		"assert": {
-			"preset": "lighthouse:no-pwa"
+			"preset": "lighthouse:no-pwa",
+			"non-composited-animations": "off",
+			"render-blocking-resources": ["warn", {
+				"maxLength": 2
+			}],
+			"categories:performance": ["error", {
+				"minScore": 0.95
+			}],
+			"categories:accessibility": ["error", {
+				"minScore": 1
+			}],
+			"categories:seo": ["error", {
+				"minScore": 1
+			}],
+			"categories:dobetterweb": ["error", {
+				"minScore": 1
+			}]
 		}
 	}
 }
