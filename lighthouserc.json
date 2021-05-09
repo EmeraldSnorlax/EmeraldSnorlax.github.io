@@ -1,7 +1,10 @@
 {
-  "ci": {
-    "collect": {
-      "staticDistDir": "./build"
-    }
+  ci: {
+    collect: {
+      staticDistDir: "./build"
+    },
+   assert: {
+      preset: 'lighthouse:recommended',
+    },
   }
 }
