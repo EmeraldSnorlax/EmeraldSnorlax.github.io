@@ -8,6 +8,17 @@ module.exports = {
     '@snowpack/plugin-svelte',
     '@snowpack/plugin-dotenv',
     [
+      'snowpack-plugin-minify-html',
+      {
+        htmlMinifierOptions: {
+          sortAttributes: true,
+          removeComments: true,
+          html5: true,
+          collapseWhitespace: true,
+        },
+      },
+    ],
+    [
       '@snowpack/plugin-typescript',
       {
         /* Yarn PnP workaround: see https://www.npmjs.com/package/@snowpack/plugin-typescript */
