@@ -1,4 +1,4 @@
-name: Test
+name: CI
 
 on: [push, pull_request]
 jobs:
@@ -15,8 +15,19 @@ jobs:
       run: yarn
     - name: Run tests
       run: yarn test
-    - name: Lighthouse Test
-      uses: treosh/lighthouse-ci-action@v7
+    
+  Lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/cache@v2
+      with:
+        path: '**/node_modules'
+        key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+    
+    - uses: actions/checkout@v2
+    - name: Build project
+      run: yarn && yarn build
+    - uses: treosh/lighthouse-ci-action@v7
       with:
         configPath: './lighthouserc.json'
     
