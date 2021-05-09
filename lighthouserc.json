@@ -5,7 +5,6 @@
 			"numberOfRuns": 3
 		},
 		"assert": {
-			"preset": "lighthouse:no-pwa",
 			"non-composited-animations": "off",
 			"render-blocking-resources": ["warn", {
 				"maxLength": 2
