@@ -5,6 +5,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "jsx": "preserve",
+    "target": "ES2019",
     "baseUrl": "./",
     /* paths - import rewriting/resolving */
     "paths": {
