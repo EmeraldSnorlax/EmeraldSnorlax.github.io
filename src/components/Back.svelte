@@ -16,8 +16,9 @@
 <style>
   button {
     border: none;
-    background: tomato;
-    color: black;
+    background:#795548;
+    color: white;
+    fill: white;
     padding: 1em;
     border-radius: 6px;
     transition: 0.2s;
