@@ -45,8 +45,8 @@
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        width="16px"
-        height="16px"
+        width="24px"
+        height="24px"
         ><path d={mdiDownload} />
       </svg>
       Verify and download key</button
@@ -58,8 +58,8 @@
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        width="16px"
-        height="16px"
+        width="24px"
+        height="24px"
         ><path d={copyIcon} />
         <title>Copy Fingerprint</title>
       </svg>
@@ -77,6 +77,12 @@
     height: 100%;
     width: 100%;
     color: white;
+  }
+
+  .download {
+    background-color: #556868;
+    color: white;
+    fill: white;
   }
   div {
     width: 65%;
@@ -97,7 +103,7 @@
   }
   .fingerprint {
     font-family: "Roboto Mono", "Courier New", Courier, monospace;
-    background: #636363;
+    background: #454545;
     color: white;
     fill: white;
   }

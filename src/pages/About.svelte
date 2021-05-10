@@ -132,16 +132,18 @@
     width: 100%;
   }
 
+  /* TODO: DONT HARDCODE COLOURS AND EXTRACT EACH BUTTON TO ITS OWN COMPONENT */
   button {
     padding: 1em;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: start;
-    background: white;
+    background: #556868;
+    color: white;
+    fill: white;
     border: none;
     transition: 0.2s;
-    color: black;
     border-radius: 5px;
   }
 
