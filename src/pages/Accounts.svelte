@@ -30,8 +30,8 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
-          width="24px"
-          height="24px"
+          width="32px"
+          height="32px"
           ><path d={discordIcon} />
         </svg>
         Copy Discord
@@ -43,8 +43,8 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
-          width="24px"
-          height="24px"
+          width="32px"
+          height="32px"
           ><path d={mdiGithub} />
         </svg>
         Github
@@ -136,7 +136,8 @@
   .discord,
   .github {
     background: #556868 !important;
-    padding: 1.5em !important;
-    justify-content: center;
+    padding: 1em 0.7em !important;
+    font-size: x-large !important;
+    font-weight: 600;
   }
 </style>
