@@ -25,7 +25,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
   }
 
   button:hover {

@@ -137,13 +137,12 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: #454545;
+    justify-content: start;
+    background: white;
     border: none;
     transition: 0.2s;
-    color: white;
+    color: black;
     border-radius: 5px;
-    fill: white;
   }
 
   button > svg {
