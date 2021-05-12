@@ -17,8 +17,10 @@
   <div>
     <h1>Hello!</h1>
     <h2>I'm Rain.</h2>
-    {#if $location !== "home"}
-      <p>"{$location}" doesn't exist, so I've brought you back home.</p>
+    {#if $location !== "home" && $location}
+      <p in:fade={{ duration: 0, delay: 300 }}>
+        "{$location}" doesn't exist, so I've brought you back home.
+      </p>
     {/if}
   </div>
   <div class="up nav">
