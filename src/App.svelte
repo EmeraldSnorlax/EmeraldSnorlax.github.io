@@ -8,7 +8,12 @@
 	import Pgp from "./pages/PGP.svelte";
 	import Accounts from "./pages/Accounts.svelte";
 	import About from "./pages/About.svelte";
-	window.onhashchange = () => {
+	onMount(() => {
+		setTimeout(() => ($intro = true), 2000);
+		if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+			$motion = "";
+		}
+		window.onhashchange = () => {
 		switch (window.location.hash) {
 			case "#home":
 			case "#about":
@@ -17,15 +22,11 @@
 			case "#pgp":
 				$location = window.location.hash.substring(1);
 				break;
+			default:
+				$location = 'home';
 		}
 	};
-
-	onMount(() => {
-		setTimeout(() => ($intro = true), 2000);
-		if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-			$motion = "";
-		}
-		$location = window.location.hash.substring(1);
+		$location = window.location.hash.substring(1) || 'home'
 	});
 </script>
 
