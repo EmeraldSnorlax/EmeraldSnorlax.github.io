@@ -7,19 +7,22 @@
     mdiChevronDoubleDown,
     mdiChevronDoubleLeft,
   } from "@mdi/js";
-import { location } from "./stores";
+  import { location } from "./stores";
 </script>
 
-<nav in:fade={{ duration: 800, easing: cubicIn }}
+<nav
+  in:fade={{ duration: 800, easing: cubicIn }}
   out:fade={{ duration: 100, easing: linear }}
 >
   <div>
     <h1>Hello!</h1>
     <h2>I'm Rain.</h2>
+    {#if $location !== "home"}
+      <p>"{$location}" doesn't exist, so I've brought you back home.</p>
+    {/if}
   </div>
   <div class="up nav">
-    <button
-    on:click={() => $location = 'projects'}
+    <button on:click={() => (window.location.hash = "#projects")}
       >Projects
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -30,8 +33,7 @@ import { location } from "./stores";
     </button>
   </div>
   <div class="right nav">
-    <button
-    on:click={() => $location = 'pgp'}
+    <button on:click={() => (window.location.hash = "#pgp")}
       >PGP
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -42,8 +44,7 @@ import { location } from "./stores";
     </button>
   </div>
   <div class="down nav">
-    <button
-    on:click={() => $location = 'accounts'}
+    <button on:click={() => (window.location.hash = "#accounts")}
       >Accounts
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -54,9 +55,7 @@ import { location } from "./stores";
     </button>
   </div>
   <div class="left nav">
-    <button
-    on:click={() => $location = 'about'}
-    >
+    <button on:click={() => (window.location.hash = "#about")}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"

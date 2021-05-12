@@ -8,19 +8,30 @@
 	import Pgp from "./pages/PGP.svelte";
 	import Accounts from "./pages/Accounts.svelte";
 	import About from "./pages/About.svelte";
+	window.onhashchange = () => {
+		switch (window.location.hash) {
+			case "#home":
+			case "#about":
+			case "#projects":
+			case "#accounts":
+			case "#pgp":
+				$location = window.location.hash.substring(1);
+				break;
+		}
+	};
+
 	onMount(() => {
 		setTimeout(() => ($intro = true), 2000);
 		if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 			$motion = "";
 		}
+		$location = window.location.hash.substring(1);
 	});
 </script>
 
 <main class={$motion} data-testid="main">
 	{#if !$intro}
 		<Intro />
-	{:else if $location === "home"}
-		<Home />
 	{:else if $location === "projects"}
 		<Projects />
 	{:else if $location === "pgp"}
@@ -29,6 +40,8 @@
 		<Accounts />
 	{:else if $location === "about"}
 		<About />
+	{:else}
+		<Home />
 	{/if}
 	<ToggleMotion />
 </main>

@@ -3,7 +3,11 @@
   import { location } from "../stores";
 </script>
 
-<button on:click={() => ($location = "home")}>
+<button
+  on:click={() => {
+    window.location.hash = "home";
+  }}
+>
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
@@ -16,7 +20,7 @@
 <style>
   button {
     border: none;
-    background:#795548;
+    background: #795548;
     color: white;
     fill: white;
     padding: 1em;
