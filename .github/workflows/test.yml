@@ -9,13 +9,11 @@ jobs:
       with:
         path: '**/node_modules'
         key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
-    
     - uses: actions/checkout@v2
     - name: Install dependencies
       run: yarn
     - name: Run tests
       run: yarn test
-    
   Lighthouse:
     runs-on: ubuntu-latest
     steps:
@@ -23,12 +21,10 @@ jobs:
       with:
         path: '**/node_modules'
         key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
-    
+
     - uses: actions/checkout@v2
     - name: Build project
       run: yarn && yarn build
     - uses: treosh/lighthouse-ci-action@v7
       with:
         configPath: './lighthouserc.json'
-    
-
