@@ -11,7 +11,7 @@
   } from "@mdi/js";
   import copy from "./copy";
   let discordIcon = mdiDiscord;
-  const discord = "Rain (Snorlax)#0727";
+  const discord = "Rain (Snorlax)#8265";
 </script>
 
 <main
