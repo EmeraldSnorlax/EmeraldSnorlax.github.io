@@ -9,21 +9,36 @@
     out:scale={{ duration: 400 }}
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 14.817 11.036"
-    >
+  >
+    <defs>
+      <linearGradient id="rainbow">
+        <stop offset="16%" stop-color="#E23241" />
+        <stop offset="32%" stop-color="#FF9438" />
+        <stop offset="48%" stop-color="#FFDC44" />
+        <stop offset="64%" stop-color="#4DC16F" />
+        <stop offset="80%" stop-color="#1781AF" />
+        <stop offset="100%" stop-color="#8B1B8D" />
+      </linearGradient>
+      <linearGradient id="stem">
+        <stop offset="0%" stop-color="#FFA63B" />
+        <stop offset="95%" stop-color="#B6D156" />
+      </linearGradient>
+    </defs>
     <title>Rain</title>
-    <g fill="none" stroke="#fff" stroke-width=".265">
+    <g fill="none" stroke-width=".265">
       <path
+        stroke="url(#rainbow)"
         in:draw={{ duration: 1500, easing: quadIn }}
         stroke-linecap="round"
         d="M.132 10.903V.32S4.101-.738 4.101 2.172c0 2.646-3.969 3.44-3.969 3.44 3.969-.794 3.175.793 3.175 3.968 0 .265 0 .794.794.794 1.058 0 1.323-.794 1.323-2.116v-3.97C5.424 2.173 5.352.32 6.747.32 8.14.32 8.07 2.172 8.07 4.29v3.969c0 1.058.226 2.116 1.058 2.116 1.323 0 1.323-1.323 1.323-1.852V6.67c0-5.027 0-6.085-.265-6.085-.264 0-.264 1.058-.264 6.085v1.852c0 .53 0 1.852 1.058 1.852 1.059 0 1.059-.794 1.059-2.116V2.966c0-1.323.336-2.646 1.322-2.646.987 0 1.323 1.323 1.323 2.646V10.903"
       />
       <path
+        stroke="url(#stem)"
         in:draw={{ delay: 898, duration: 141, easing: linear }}
         d="M5.424 5.744c1.323 0 1.323-1.323 2.646-1.323"
       /></g
     >
-    </svg
-  >
+  </svg>
 </div>
 
 <style>
