@@ -12,12 +12,12 @@
   >
     <defs>
       <linearGradient id="rainbow">
-        <stop offset="16%" stop-color="#E23241" />
-        <stop offset="32%" stop-color="#FF9438" />
-        <stop offset="48%" stop-color="#FFDC44" />
-        <stop offset="64%" stop-color="#4DC16F" />
-        <stop offset="80%" stop-color="#1781AF" />
-        <stop offset="100%" stop-color="#8B1B8D" />
+        <stop offset="8%" stop-color="#E23241" />
+        <stop offset="24%" stop-color="#FF9438" />
+        <stop offset="40%" stop-color="#FFDC44" />
+        <stop offset="56%" stop-color="#4DC16F" />
+        <stop offset="62%" stop-color="#1781AF" />
+        <stop offset="90%" stop-color="#8B1B8D" />
       </linearGradient>
       <linearGradient id="stem">
         <stop offset="0%" stop-color="#FFA63B" />
