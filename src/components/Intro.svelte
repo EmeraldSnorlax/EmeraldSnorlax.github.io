@@ -20,8 +20,8 @@
         <stop offset="90%" stop-color="#8B1B8D" />
       </linearGradient>
       <linearGradient id="stem">
-        <stop offset="0%" stop-color="#FFA63B" />
-        <stop offset="95%" stop-color="#B6D156" />
+        <stop offset="0%" stop-color="#FFC941" />
+        <stop offset="95%" stop-color="#59C36C" />
       </linearGradient>
     </defs>
     <title>Rain</title>
