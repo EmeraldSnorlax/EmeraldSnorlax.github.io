@@ -136,6 +136,10 @@
   .JavaScript {
     color: #f7df1e;
   }
+  
+  .HTML {
+    color: #f1672c;
+  }
 
   main {
     display: flex;
